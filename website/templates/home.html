@@ -1,6 +1,6 @@
 {%  extends 'base.html' %}
-{% load static %}
 
+{% load static %}
 
 {% block content %}
 
@@ -27,8 +27,8 @@
                 find out what we have to
                 offer you.</p>
               <div class="welcome-btn-group">
-                <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact
+                <a href=" {% url 'home'%} " class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                <a href=" {% url 'contact'%} " class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact
                   Us</a>
               </div>
             </div>
@@ -52,8 +52,8 @@
                 find out what we have to
                 offer you.</p>
               <div class="welcome-btn-group">
-                <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-                <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact
+                <a href=" {% url 'home'%} " class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
+                <a href=" {% url 'contact'%} " class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact
                   Us</a>
               </div>
             </div>
