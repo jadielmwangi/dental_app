@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          <!-- Single Skills Area -->
+          <!-- Singl e Skills Area -->
           <div class="single-skills-area mt-30">
             <h6>Friendly Staff</h6>
             <div id="bar3" class="barfiller">
@@ -330,7 +330,7 @@
 
       <div class="col-12">
         <div class="more-btn text-center mt-50">
-          <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+          <a href=" {% url 'service' %} " class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
         </div>
       </div>
     </div>
@@ -345,7 +345,8 @@
     <div class="row">
       <!-- Section Heading -->
       <div class="col-12">
-        <div class="section-heading text-center white">
+        <div class="section-
+        heading text-center white">
           <h2>Book An Apointment</h2>
           <div class="line"></div>
         </div>
@@ -356,7 +357,9 @@
       <div class="col-12">
         <!-- Appointment Form -->
         <div class="appointment-form">
-          <form action="#" method="post">
+
+          <form action=" {% url 'appointment' %} " method="post">
+            {%  csrf_token %}
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group mb-30">
@@ -365,7 +368,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group mb-30">
-                  <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
+                  <input type="text" name="your-phone" class="form-control" placeholder="Your Phone No" required>
                 </div>
               </div>
               <div class="col-md-6">
@@ -380,8 +383,8 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group mb-30">
-                  <select name="your-scheldule" class="form-control">
-                    <option value="Choose Your Scheldule">Choose Your Scheldule</option>
+                  <select name="your-schedule" class="form-control">
+                    <option value=" First Choice appointment time "> First Choice appointment time </option>
                     <option value="9 AM to 10 AM">9 AM to 10 AM</option>
                     <option value="11 AM to 12 PM">11 AM to 12 PM</option>
                     <option value="2 PM to 4 PM">2 PM to 4 PM</option>
@@ -391,12 +394,15 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group mb-30">
-                  <select name="your-time" class="form-control">
-                    <option value="Choose Your Time">Choose Your Scheldule</option>
-                    <option value="9 AM to 10 AM">9 AM to 10 AM</option>
-                    <option value="11 AM to 12 PM">11 AM to 12 PM</option>
-                    <option value="2 PM to 4 PM">2 PM to 4 PM</option>
-                    <option value="8 PM to 10 PM">8 PM to 10 PM</option>
+                  <select name="your-date" class="form-control">
+                    <option value="Choose Your Day">Choose Your Day</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value=" Wenesday"> Wenesday</option>
+                    <option value=" Thursday">THursday</option>
+                    <option value=" Friday">Friday</option>
+
+
                   </select>
                 </div>
               </div>
@@ -434,7 +440,7 @@
       <!-- Single Dentist Area -->
       <div class="col-12 col-sm-6 col-md-4">
         <div class="single-dentist-area mb-100">
-          <img src=" {% static 'website/img/bg-img/dr mwas.jpg' %} " alt="">
+          <img src="  {% static 'website/img/bg-img/9.png' %}  " alt="">
           <!-- Dentist Content -->
           <div class="dentist-content">
             <!-- Social Info -->
@@ -445,8 +451,8 @@
             </div>
             <!-- Dentist Info -->
             <div class="dentist-info bg-gradient-overlay">
-              <h5>Dr Mwas</h5>
-              <p>Biostatistician / Full stack software developer</p>
+              <h5>Dr Amos </h5>
+              <p> Serguon </p>
             </div>
           </div>
         </div>
@@ -527,7 +533,7 @@
           <div class="single-testimonial-slide d-flex align-items-center">
             <!-- Thumbnail -->
             <div class="testimonial-thumb">
-              <img src="{% static 'website/img/bg-img/8.jpg' %}" alt="">
+              <img src="{% static 'website/img/bg-img/dr mwas.jpg' %}" alt="">
             </div>
             <!-- Content -->
             <div class="testimonial-content">
@@ -535,7 +541,7 @@
                 day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist
                 is very reassuring and
                 very helpful. Excellent treatment and advice.”</h5>
-              <h6>Arron Ramsey</h6>
+              <h6> Nelson Joel</h6>
               <p>Dental Patient</p>
             </div>
           </div>
@@ -552,7 +558,7 @@
                 day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist
                 is very reassuring and
                 very helpful. Excellent treatment and advice.”</h5>
-              <h6>Arron Ramsey</h6>
+              <h6>Martin Kelvin</h6>
               <p>Dental Patient</p>
             </div>
           </div>

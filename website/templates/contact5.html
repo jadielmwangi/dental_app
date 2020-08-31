@@ -1,46 +1,21 @@
- {%  extends 'base.html' %}
+{%  extends 'base.html' %}
 
 {% load static %}
-{% block title %}  Dental contact page {% endblock %}
+{% block title %} sir mwas Dental contact page {% endblock%}
 {% block content %}
 
-  <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url( {% static 'website/img/bg-img/12.jpg' %} );">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12">
-          <h2 class="title">Contact</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="breadcumb--con">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Breadcrumb Area End ***** -->
-  
   <!-- ***** Contact Area Start ***** -->
-
   {% if message_name %}
+
+
 
   <center>
     <h2>Thanks {{message_name}} </h2>
-    <p>WE have recieve your request and we shall respond shortly</p>
+    <p>WE have recieve your request and we shall respomnd shortley</p>
   </center>
-  
   <br/><br/><br/>
   {%  else %}
+
 
   <section class="dento-contact-area mt-50 mb-100">
     <div class="container">
@@ -58,12 +33,12 @@
         <div class="col-12 col-md-4">
           <div class="contact-information">
             <h5>Address</h5>
-            <p> Kimathi Street, Nairobi, 856934 Kenya</p>
+            <p> kimathi street, Nairobi, 10103 Kenya</p>
 
             <h5>Phone</h5>
-            <p> 254 727 867 684</p>
+            <p>+254. 0000. 111. 222</p>
 
-           
+  
 
             <h5>Email</h5>
             <p class="mb-0">jedielmwangi@gmail.com</p>
@@ -75,15 +50,13 @@
           <div class="contact-form">
             <!-- Section Heading -->
             <div class="section-heading">
-              <h2>Get In Touch</h2>
+              <h2>Get In Touch</h2> {{message_name}}
               <div class="line"></div>
             </div>
             <!-- Form -->
             <form action=" {%  url 'contact' %} " method="post">
-
               {% csrf_token %}
-
-              <div class="row">
+              <div class="row"> 
                 <div class="col-lg-6">
                   <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
                 </div>
@@ -108,7 +81,4 @@
   {%  endif %}
   <!-- ***** Contact Area End ***** -->
 
-  {% endblock %}
-
-
-  
+  {%  endblock %}

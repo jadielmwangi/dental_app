@@ -37,8 +37,8 @@
           <!-- Top Content -->
           <div class="col-6 col-md-9 col-lg-8">
             <div class="top-header-content">
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title=" kimathi Street, Nairobi, +254 727 867 684  Kenya"><i class="fa fa-map-marker"></i> <span>28 Jackson Street, Chicago, 7788569 USA</span></a>
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.dento@gmail.com"><i class="fa fa-envelope"></i> <span>info.dento@gmail.com</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title=" kimathi Street, Nairobi, +254 727 867 684  Kenya"><i class="fa fa-map-marker"></i> <span>Kimathi Street, Nairobi, Kenya</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="jedielmwangi@gmail.com"><i class="fa fa-envelope"></i> <span>jedielmwangi@gmail.com</span></a>
             </div>
           </div>
           <!-- Top Header Social Info -->
@@ -67,7 +67,7 @@
             <a class="nav-brand" href="{% url 'home'%}"><img src=" {% static 'website/img/core-img/logo.png' %} " alt=""></a>
 
             <!-- Navbar Toggler -->
-            <div class="classy-navbar-toggler">
+            <div class="classy-navbar-toggler">                
               <span class="navbarToggler"><span></span><span></span><span></span></span>
             </div>
 
@@ -118,14 +118,14 @@
                       <li><a href="blog_details.html">- Blog Details</a></li>
                     </ul>
                   </li>
-                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
               <!-- Nav End -->
             </div>
 
             <!-- Booking Now Button -->
-            <a href="#" class="btn dento-btn booking-btn">Booking Now</a>
+            <a href="appointment.html" class="btn dento-btn booking-btn">Booking Now</a>
           </nav>
         </div>
       </div>
@@ -148,7 +148,7 @@
             <a href="./home.html" class="d-block mb-4"><img src=" {% static 'website/img/core-img/logo.png' %} " alt=""></a>
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
-              <p><i class="icon_pin"></i> 28 Jackson Street, Chicago, 7788569 USA</p>
+              <p><i class="icon_pin"></i> Kimathi Street, Nairobi, 0727 867 684 </p>
               <p><i class="icon_phone"></i> +84. 2252. 2250. 122</p>
               <p><i class="icon_mail"></i> info.dento@gmail.com</p>
             </div>
@@ -181,15 +181,15 @@
             <!-- Quick Links Nav -->
             <nav>
               <ul class="quick-links">
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
                 <li><a href="#">Policy</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="">News</a></li>
                 <li><a href="#">Advisors</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Dentist</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="{% url 'service'%}">Careers</a></li>
+                <li><a href="{% url 'home'%}">Dentist</a></li>
+                <li><a href=" {% url 'service'%}  ">Services</a></li>
                 <li><a href="#">Legals</a></li>
               </ul>
             </nav>
@@ -230,7 +230,7 @@
         <div class="col-12">
           <div class="copywrite-content">
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by sir mwas ( Full Stack Software Developer) <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">sir</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
