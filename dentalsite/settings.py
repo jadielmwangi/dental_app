@@ -127,11 +127,6 @@ STATICFILES_DIRS = [
 
 
 # Email settings
-# EMAIL_HOST = 'localhost'
-# EMAIL_PORT = 1025
-# EMAIL_HOST_USER = ''
-# EMAIL_HOST_PASSOWORD = ''
-# EMAIL_USE_TLS =False
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'jedielmwangi@gmail.com'
